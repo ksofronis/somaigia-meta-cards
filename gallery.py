@@ -17,9 +17,10 @@ def tile(t):
     name = html.escape(t['name']); brand = html.escape(t.get('brand') or '')
     return (f'<figure class="tile" data-q="{html.escape((t["name"] + " " + t["title"]).lower())}" data-g="{html.escape(t["gender"])}" data-s="{html.escape(t["segment"])}">'
             f'<div class="pair"><img loading="lazy" src="o/{o}.jpg" alt="Πριν: {name}" width="210" height="210">'
-            f'<img loading="lazy" src="t/{t["hash"]}.jpg" alt="Μετά: {name}" width="210" height="210"></div>'
+            f'<a href="../c/{t["hash"]}.jpg" target="_blank" rel="noopener"><img loading="lazy" src="t/{t["hash"]}.jpg" alt="Μετά: {name}" width="210" height="210"></a></div>'
+            '<div class="legend"><span>Πριν</span><span>Μετά</span></div>'
             f'<figcaption><a href="{html.escape(t["link"])}" target="_blank" rel="noopener">{name}</a>'
-            f'<span>{brand} · {html.escape(t["gender"])} · {t["n"]} κωδ.</span></figcaption></figure>')
+            f'<span>{" · ".join(x for x in (brand, html.escape(t["gender"]), f"{t[chr(110)]} κωδ.") if x)}</span></figcaption></figure>')
 
 nav, body = [], []
 for s in SEASONS:
@@ -59,13 +60,13 @@ summary h3{{margin:0;font-size:17px}}
 .tile{{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}}
 .pair{{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}}
 .pair img{{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff;display:block}}
-.legend{{display:grid;grid-template-columns:1fr 1fr;font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}}
+.legend{{display:grid;grid-template-columns:1fr 1fr;padding:4px 10px 0;font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}}
 figcaption{{padding:8px 10px;font-size:13px}}figcaption a{{color:var(--ink);text-decoration:none;font-weight:600;display:block}}
 figcaption span{{color:var(--mute);font-size:12px}}.hide{{display:none}}
 @media (max-width:480px){{.grid{{grid-template-columns:1fr}}}}
 </style></head><body>
 <header><h1>Κάρτες δυναμικών διαφημίσεων · Πριν / Μετά</h1>
-<p>{len(tiles)} κάρτες για {len(m)} κωδικούς παπουτσιών. Αριστερά η σημερινή φωτογραφία, δεξιά η νέα κάρτα. Μεγέθη του ίδιου μοντέλου και χρώματος μοιράζονται μία κάρτα.</p>
+<p>{len(tiles)} κάρτες για {len(m)} κωδικούς παπουτσιών. Αριστερά η σημερινή φωτογραφία, δεξιά η νέα κάρτα. Μεγέθη του ίδιου μοντέλου και χρώματος μοιράζονται μία κάρτα. Πάτημα στη νέα κάρτα: πλήρες μέγεθος.</p>
 <div class="bar">{"".join(nav)}
 <input id="q" type="search" placeholder="Αναζήτηση μοντέλου ή κωδικού" aria-label="Αναζήτηση">
 <select id="g" aria-label="Φύλο"><option value="">Όλα τα φύλα</option>{opt(genders)}</select>
