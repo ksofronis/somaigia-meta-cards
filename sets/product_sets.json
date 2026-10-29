@@ -1,0 +1,170 @@
+[
+ {
+  "name": "AT | Όλα τα παπούτσια",
+  "filter": "{\"and\": [{\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\", \"Καλοκαιρινά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 3390,
+  "expected_all": 3390
+ },
+ {
+  "name": "AT | Σεζόν Χειμώνας (Χειμερινά + Όλο το χρόνο)",
+  "filter": "{\"and\": [{\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 1419,
+  "expected_all": 1419
+ },
+ {
+  "name": "AT | Χειμερινά",
+  "filter": "{\"and\": [{\"custom_label_1\": {\"is_any\": [\"Χειμερινά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 950,
+  "expected_all": 950
+ },
+ {
+  "name": "AT | Καλοκαιρινά",
+  "filter": "{\"and\": [{\"custom_label_1\": {\"is_any\": [\"Καλοκαιρινά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 1971,
+  "expected_all": 1971
+ },
+ {
+  "name": "AT | Όλο το χρόνο",
+  "filter": "{\"and\": [{\"custom_label_1\": {\"is_any\": [\"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 469,
+  "expected_all": 469
+ },
+ {
+  "name": "AT | Celia Ruiz",
+  "filter": "{\"and\": [{\"custom_label_4\": {\"is_any\": [\"Celia Ruiz\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 133,
+  "expected_all": 133
+ },
+ {
+  "name": "AT | Celia Ruiz - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_4\": {\"is_any\": [\"Celia Ruiz\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 117,
+  "expected_all": 117
+ },
+ {
+  "name": "AT | Σαμπό",
+  "filter": "{\"and\": [{\"custom_label_4\": {\"is_any\": [\"Σαμπό\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 371,
+  "expected_all": 371
+ },
+ {
+  "name": "AT | Ειδικά υποδήματα",
+  "filter": "{\"and\": [{\"custom_label_4\": {\"is_any\": [\"Ειδικά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 161,
+  "expected_all": 161
+ },
+ {
+  "name": "AT | Γυναικεία - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_3\": {\"is_any\": [\"Γυναικεία\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 641,
+  "expected_all": 641
+ },
+ {
+  "name": "AT | Ανδρικά - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_3\": {\"is_any\": [\"Ανδρικά\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 186,
+  "expected_all": 186
+ },
+ {
+  "name": "AT | Παιδικά - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_3\": {\"is_any\": [\"Παιδικά\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 47,
+  "expected_all": 47
+ },
+ {
+  "name": "AT | Γυναικεία - Καλοκαίρι",
+  "filter": "{\"and\": [{\"custom_label_3\": {\"is_any\": [\"Γυναικεία\"]}}, {\"custom_label_1\": {\"is_any\": [\"Καλοκαιρινά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 1105,
+  "expected_all": 1105
+ },
+ {
+  "name": "AT | Ανδρικά - Καλοκαίρι",
+  "filter": "{\"and\": [{\"custom_label_3\": {\"is_any\": [\"Ανδρικά\"]}}, {\"custom_label_1\": {\"is_any\": [\"Καλοκαιρινά\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 140,
+  "expected_all": 140
+ },
+ {
+  "name": "AT | Μπότες - Μποτάκια",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Μπότες - Μποτάκια\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 171,
+  "expected_all": 171
+ },
+ {
+  "name": "AT | Sneakers",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Sneakers\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 369,
+  "expected_all": 369
+ },
+ {
+  "name": "AT | Casual",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Casual\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 494,
+  "expected_all": 494
+ },
+ {
+  "name": "AT | Μοκασίνια - Loafers",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Μοκασίνια - Loafers\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 92,
+  "expected_all": 92
+ },
+ {
+  "name": "AT | Γόβες",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Γόβες\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 146,
+  "expected_all": 146
+ },
+ {
+  "name": "AT | Μπαλαρίνες",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Μπαλαρίνες\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 77,
+  "expected_all": 77
+ },
+ {
+  "name": "AT | Παντόφλες",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Παντόφλες\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 673,
+  "expected_all": 673
+ },
+ {
+  "name": "AT | Πέδιλα",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Πέδιλα\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 585,
+  "expected_all": 585
+ },
+ {
+  "name": "AT | Σανδάλια",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Σανδάλια\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 231,
+  "expected_all": 231
+ },
+ {
+  "name": "AT | Πλατφόρμες",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Πλατφόρμες\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 116,
+  "expected_all": 116
+ },
+ {
+  "name": "AT | Παντόφλες - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Παντόφλες\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 303,
+  "expected_all": 303
+ },
+ {
+  "name": "AT | Γυναικεία Μπότες - Μποτάκια",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Μπότες - Μποτάκια\"]}}, {\"custom_label_3\": {\"is_any\": [\"Γυναικεία\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 171,
+  "expected_all": 171
+ },
+ {
+  "name": "AT | Γυναικεία Sneakers + Casual - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Sneakers\", \"Casual\"]}}, {\"custom_label_3\": {\"is_any\": [\"Γυναικεία\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 184,
+  "expected_all": 184
+ },
+ {
+  "name": "AT | Ανδρικά Sneakers + Casual - Χειμώνας",
+  "filter": "{\"and\": [{\"custom_label_2\": {\"is_any\": [\"Sneakers\", \"Casual\"]}}, {\"custom_label_3\": {\"is_any\": [\"Ανδρικά\"]}}, {\"custom_label_1\": {\"is_any\": [\"Χειμερινά\", \"Όλο το χρόνο\"]}}, {\"availability\": {\"eq\": \"in stock\"}}]}",
+  "expected_in_stock": 156,
+  "expected_all": 156
+ }
+]
