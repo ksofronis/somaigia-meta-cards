@@ -1,6 +1,6 @@
 """Hourly pipeline: live feed -> shoe taxonomy -> missing cards rendered -> feeds + client review gallery.
   feed/labels.csv  id,custom_label_1..4 (season, category, gender, segment) for Meta product sets; always on
-  feed/images.csv  id,image_link; card URLs only after APPROVED exists, first N of rollout order (img_count.txt)
+  feed/images.csv  the supplementary feed Meta reads: labels + image_link; card URLs only after APPROVED exists, first N of rollout order (img_count.txt)
 Usage: python3 build.py [--feed local.xml] [--max N]"""
 import os, io, sys, csv, json, hashlib, argparse, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from PIL import Image
@@ -25,9 +25,11 @@ for it in ET.fromstring(raw).findall('.//item'):
 prev = len(json.load(open('manifest.json'))) if os.path.exists('manifest.json') else 0
 if len(items) < prev * 0.5: sys.exit(f'feed shrank {prev} -> {len(items)}: keeping last good feeds')
 os.makedirs('feed', exist_ok=True)
+LABEL_COLS = ['id', 'custom_label_1', 'custom_label_2', 'custom_label_3', 'custom_label_4']
+label_row = lambda p: [p['id'], p['season'], p['category'], p['gender'], p['segment']]
 with open('feed/labels.csv', 'w', newline='') as f:
-    w = csv.writer(f); w.writerow(['id', 'custom_label_1', 'custom_label_2', 'custom_label_3', 'custom_label_4'])
-    w.writerows([p['id'], p['season'], p['category'], p['gender'], p['segment']] for p in items)
+    w = csv.writer(f); w.writerow(LABEL_COLS)
+    w.writerows(label_row(p) for p in items)
 
 # render cards that do not exist yet (one per content hash: sizes of one model+colour share a card)
 os.makedirs('c', exist_ok=True); os.makedirs('review/t', exist_ok=True); os.makedirs('review/o', exist_ok=True); os.makedirs('.cache', exist_ok=True)
@@ -66,9 +68,11 @@ n = int(open('img_count.txt').read()) if os.path.exists('img_count.txt') else 0
 live_ids = set()
 if os.path.exists('APPROVED') and not os.path.exists('PAUSE'):
     live_ids = {p['id'] for p in ready} if order and n >= len(order) else set(order[:n])
+ready_ids = {p['id'] for p in ready}
 with open('feed/images.csv', 'w', newline='') as f:
-    w = csv.writer(f); w.writerow(['id', 'image_link'])
-    w.writerows([p['id'], f"{BASE}/c/{p['hash']}.jpg"] for p in ready if p['id'] in live_ids)
+    # one supplementary feed for all: labels always; image_link column only once something is live, non-live rows keep the site photo
+    w = csv.writer(f); w.writerow(LABEL_COLS + ['image_link'] * bool(live_ids))
+    w.writerows(label_row(p) + ([f"{BASE}/c/{p['hash']}.jpg" if p['id'] in live_ids & ready_ids else p['image']] if live_ids else []) for p in items)
 json.dump({p['id']: {k: p[k] for k in ('hash', 'image', 'title', 'season', 'category', 'gender', 'segment', 'ship', 'stock', 'link', 'name', 'usps')} for p in items},
           open('manifest.json', 'w'), ensure_ascii=False, indent=0)
 print(f'shoes {len(items)} | cards rendered now {done}, pending {max(0, len(todo) - done)}, bad images {len(bad)} | ready {len(ready)} | images.csv rows {len(live_ids & {p["id"] for p in ready})}')
