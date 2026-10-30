@@ -22,6 +22,8 @@ for it in ET.fromstring(raw).findall('.//item'):
     p = dict(id=g(it, 'id'), image=g(it, 'image_link'), name=cards.clean_name(g(it, 'title')), brand=g(it, 'brand'), title=g(it, 'title'),
              ship=price > cards.FREE_SHIP_OVER, usps=[u for u, _ in cards.usps(g(it, 'description'))], link=g(it, 'link'), stock=g(it, 'availability'), **c)
     p['hash'] = cards.content_hash(p); items.append(p)
+prev = len(json.load(open('manifest.json'))) if os.path.exists('manifest.json') else 0
+if len(items) < prev * 0.5: sys.exit(f'feed shrank {prev} -> {len(items)}: keeping last good feeds')
 os.makedirs('feed', exist_ok=True)
 with open('feed/labels.csv', 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['id', 'custom_label_1', 'custom_label_2', 'custom_label_3', 'custom_label_4'])
@@ -60,7 +62,10 @@ json.dump(bad, open('bad_images.json', 'w'), ensure_ascii=False, indent=0)
 ready = [p for p in items if os.path.exists(f"c/{p['hash']}.jpg")]
 order = [l.strip() for l in open('rollout_order.txt')] if os.path.exists('rollout_order.txt') else []
 n = int(open('img_count.txt').read()) if os.path.exists('img_count.txt') else 0
-live_ids = set(order[:n]) if os.path.exists('APPROVED') and not os.path.exists('PAUSE') else set()
+# rollout finished (n covers the whole order) -> every ready product goes live, so new products get cards automatically
+live_ids = set()
+if os.path.exists('APPROVED') and not os.path.exists('PAUSE'):
+    live_ids = {p['id'] for p in ready} if order and n >= len(order) else set(order[:n])
 with open('feed/images.csv', 'w', newline='') as f:
     w = csv.writer(f); w.writerow(['id', 'image_link'])
     w.writerows([p['id'], f"{BASE}/c/{p['hash']}.jpg"] for p in ready if p['id'] in live_ids)
