@@ -48672,24 +48672,6 @@
 "Αντικραδασμική σόλα"
 ]
 },
-"2864-22961": {
-"hash": "1367c3f01c92",
-"image": "https://www.somaigia-shoes.gr/8520-large_default_2x/botaki-11010.jpg",
-"title": "Μποτάκι 11010 ΧΡΩΜΑ Μπλε Νούμερο 41",
-"season": "Χειμερινά",
-"category": "Μπότες - Μποτάκια",
-"gender": "Γυναικεία",
-"segment": "Ανατομικά",
-"ship": true,
-"stock": "in stock",
-"link": "https://www.somaigia-shoes.gr/botes-botakia/2864-22961-botaki-11010.html#/14-χρωμα-μπλε/28-size-41",
-"name": "Μποτάκι 11010",
-"usps": [
-"Αποσπώμενος ανατομικός πάτος",
-"Γνήσιο δέρμα",
-"Αντικραδασμική σόλα"
-]
-},
 "2865-22970": {
 "hash": "44cb090d4e57",
 "image": "https://www.somaigia-shoes.gr/8492-large_default_2x/botaki-21001.jpg",
@@ -49935,6 +49917,23 @@
 "ship": false,
 "stock": "in stock",
 "link": "https://www.somaigia-shoes.gr/anatomika/3216-23487-pantofla-981.html#/27-size-40/42-χρωμα-μπορντό",
+"name": "Παντόφλα 981",
+"usps": [
+"Αποσπώμενος ανατομικός πάτος",
+"Αντικραδασμική σόλα"
+]
+},
+"3216-23488": {
+"hash": "8a5d37f20de8",
+"image": "https://www.somaigia-shoes.gr/9332-large_default_2x/pantofla-981.jpg",
+"title": "Παντόφλα 981 ΧΡΩΜΑ Μπορντό  Νούμερο 41",
+"season": "Χειμερινά",
+"category": "Παντόφλες",
+"gender": "Unisex",
+"segment": "Ανατομικά",
+"ship": false,
+"stock": "in stock",
+"link": "https://www.somaigia-shoes.gr/anatomika/3216-23488-pantofla-981.html#/28-size-41/42-χρωμα-μπορντό",
 "name": "Παντόφλα 981",
 "usps": [
 "Αποσπώμενος ανατομικός πάτος",
