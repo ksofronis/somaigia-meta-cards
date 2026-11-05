@@ -35394,22 +35394,6 @@
 "Μαλακό δέρμα"
 ]
 },
-"2504-20303": {
-"hash": "9ed59c83de5f",
-"image": "https://www.somaigia-shoes.gr/6641-large_default_2x/pantofla-gr888.jpg",
-"title": "Παντόφλα GR888 ΧΡΩΜΑ Γκρι Νούμερο 36",
-"season": "Χειμερινά",
-"category": "Παντόφλες",
-"gender": "Γυναικεία",
-"segment": "Ανατομικά",
-"ship": false,
-"stock": "in stock",
-"link": "https://www.somaigia-shoes.gr/pantofles/2504-20303-pantofla-gr888.html#/5-χρωμα-γκρι/23-size-36",
-"name": "Παντόφλα GR888",
-"usps": [
-"Αντικραδασμική σόλα"
-]
-},
 "2504-20304": {
 "hash": "9ed59c83de5f",
 "image": "https://www.somaigia-shoes.gr/6641-large_default_2x/pantofla-gr888.jpg",
@@ -35421,22 +35405,6 @@
 "ship": false,
 "stock": "in stock",
 "link": "https://www.somaigia-shoes.gr/pantofles/2504-20304-pantofla-gr888.html#/5-χρωμα-γκρι/24-size-37",
-"name": "Παντόφλα GR888",
-"usps": [
-"Αντικραδασμική σόλα"
-]
-},
-"2504-20305": {
-"hash": "9ed59c83de5f",
-"image": "https://www.somaigia-shoes.gr/6641-large_default_2x/pantofla-gr888.jpg",
-"title": "Παντόφλα GR888 ΧΡΩΜΑ Γκρι Νούμερο 38",
-"season": "Χειμερινά",
-"category": "Παντόφλες",
-"gender": "Γυναικεία",
-"segment": "Ανατομικά",
-"ship": false,
-"stock": "in stock",
-"link": "https://www.somaigia-shoes.gr/pantofles/2504-20305-pantofla-gr888.html#/5-χρωμα-γκρι/25-size-38",
 "name": "Παντόφλα GR888",
 "usps": [
 "Αντικραδασμική σόλα"
@@ -53300,6 +53268,23 @@
 "ship": false,
 "stock": "in stock",
 "link": "https://www.somaigia-shoes.gr/anatomika/3347-24078-sneaker-ha1.html#/7-χρωμα-μπεζ/27-size-40",
+"name": "Sneaker HA1",
+"usps": [
+"Αποσπώμενος ανατομικός πάτος",
+"Αντικραδασμική σόλα"
+]
+},
+"3347-24080": {
+"hash": "ec1eee5606f2",
+"image": "https://www.somaigia-shoes.gr/9704-large_default_2x/sneaker-ha1.jpg",
+"title": "Sneaker HA1 ΧΡΩΜΑ Μπεζ Νούμερο 42",
+"season": "Καλοκαιρινά",
+"category": "Sneakers",
+"gender": "Unisex",
+"segment": "Ανατομικά",
+"ship": false,
+"stock": "in stock",
+"link": "https://www.somaigia-shoes.gr/anatomika/3347-24080-sneaker-ha1.html#/7-χρωμα-μπεζ/29-size-42",
 "name": "Sneaker HA1",
 "usps": [
 "Αποσπώμενος ανατομικός πάτος",
