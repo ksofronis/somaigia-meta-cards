@@ -1937,7 +1937,6 @@ id,custom_label_1,custom_label_2,custom_label_3,custom_label_4,image_link
 2457-19901,Καλοκαιρινά,Casual,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/ea536d7adc43.jpg
 2465-19988,Καλοκαιρινά,Πέδιλα,Ανδρικά,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/0d0798906809.jpg
 2465-19992,Καλοκαιρινά,Πέδιλα,Ανδρικά,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/0d0798906809.jpg
-2466-19995,Καλοκαιρινά,Παντόφλες,Ανδρικά,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/d5f70c77d402.jpg
 2467-20008,Καλοκαιρινά,Sneakers,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/0eafd5d1d833.jpg
 2467-20009,Καλοκαιρινά,Sneakers,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/0eafd5d1d833.jpg
 2468-20014,Καλοκαιρινά,Casual,Ανδρικά,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/837252625d72.jpg
@@ -2575,6 +2574,7 @@ id,custom_label_1,custom_label_2,custom_label_3,custom_label_4,image_link
 2783-22424,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/1c18b70bfd16.jpg
 2783-22425,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/1c18b70bfd16.jpg
 2789-23401,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/4c76d7cb11b2.jpg
+2789-23404,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/4c76d7cb11b2.jpg
 2791-22485,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/e272e89bc3ae.jpg
 2791-22486,Χειμερινά,Παντόφλες,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/e272e89bc3ae.jpg
 2795-22523,Χειμερινά,Casual,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/1a060e5b85e5.jpg
@@ -3342,6 +3342,17 @@ id,custom_label_1,custom_label_2,custom_label_3,custom_label_4,image_link
 3422-24646,Χειμερινά,Μπότες - Μποτάκια,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/69b8710742db.jpg
 3422-24647,Χειμερινά,Μπότες - Μποτάκια,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/69b8710742db.jpg
 3422-24648,Χειμερινά,Μπότες - Μποτάκια,Γυναικεία,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/69b8710742db.jpg
+3428-24681,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24682,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24683,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24684,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24685,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24686,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24687,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24688,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24689,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24690,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
+3428-24691,Χειμερινά,Casual,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/5b3c4da31cff.jpg
 3429-24692,Χειμερινά,Παντόφλες,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/e5e7f78dd753.jpg
 3429-24693,Χειμερινά,Παντόφλες,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/e5e7f78dd753.jpg
 3429-24694,Χειμερινά,Παντόφλες,Unisex,Ανατομικά,https://ksofronis.github.io/somaigia-meta-cards/c/e5e7f78dd753.jpg
