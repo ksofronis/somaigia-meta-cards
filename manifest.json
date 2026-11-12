@@ -35730,23 +35730,6 @@
 "Γνήσιο δέρμα"
 ]
 },
-"2519-20426": {
-"hash": "470295d8350d",
-"image": "https://www.somaigia-shoes.gr/6749-large_default_2x/botaki-51159.jpg",
-"title": "Μποτάκι 51159 ΧΡΩΜΑ Μαύρο Νούμερο 41",
-"season": "Χειμερινά",
-"category": "Μπότες - Μποτάκια",
-"gender": "Γυναικεία",
-"segment": "Ανατομικά",
-"ship": true,
-"stock": "in stock",
-"link": "https://www.somaigia-shoes.gr/botes-botakia/2519-20426-botaki-51159.html#/11-χρωμα-μαύρο/28-size-41",
-"name": "Μποτάκι 51159",
-"usps": [
-"Αποσπώμενος ανατομικός πάτος",
-"Γνήσιο δέρμα"
-]
-},
 "2520-20428": {
 "hash": "515b88e7a54b",
 "image": "https://www.somaigia-shoes.gr/6817-large_default_2x/mokasini-708512.jpg",
@@ -47075,24 +47058,6 @@
 "Αντιολισθητική σόλα"
 ]
 },
-"2830-22780": {
-"hash": "1e4bd234949c",
-"image": "https://www.somaigia-shoes.gr/8285-large_default_2x/botaki-420003.jpg",
-"title": "Μποτάκι 420003 ΧΡΩΜΑ Μαύρο Νούμερο 41",
-"season": "Χειμερινά",
-"category": "Μπότες - Μποτάκια",
-"gender": "Γυναικεία",
-"segment": "Ανατομικά",
-"ship": true,
-"stock": "in stock",
-"link": "https://www.somaigia-shoes.gr/botes-botakia/2830-22780-botaki-420003.html#/11-χρωμα-μαύρο/28-size-41",
-"name": "Μποτάκι 420003",
-"usps": [
-"Αποσπώμενος ανατομικός πάτος",
-"Αντικραδασμική σόλα",
-"Αντιολισθητική σόλα"
-]
-},
 "2832-22781": {
 "hash": "71b0c2f072f4",
 "image": "https://www.somaigia-shoes.gr/8514-large_default_2x/botaki-19000.jpg",
@@ -57142,6 +57107,23 @@
 "ship": false,
 "stock": "in stock",
 "link": "https://www.somaigia-shoes.gr/anatomika/3412-24589-pantofla-40362p.html#/11-χρωμα-μαύρο/28-size-41",
+"name": "Παντόφλα 40362P",
+"usps": [
+"Αντικραδασμική σόλα",
+"Αντιολισθητική σόλα"
+]
+},
+"3412-24590": {
+"hash": "02932dd04312",
+"image": "https://www.somaigia-shoes.gr/10138-large_default_2x/pantofla-40362p.jpg",
+"title": "Παντόφλα 40362P ΧΡΩΜΑ Μαύρο Νούμερο 42",
+"season": "Χειμερινά",
+"category": "Παντόφλες",
+"gender": "Unisex",
+"segment": "Ανατομικά",
+"ship": false,
+"stock": "in stock",
+"link": "https://www.somaigia-shoes.gr/anatomika/3412-24590-pantofla-40362p.html#/11-χρωμα-μαύρο/29-size-42",
 "name": "Παντόφλα 40362P",
 "usps": [
 "Αντικραδασμική σόλα",
